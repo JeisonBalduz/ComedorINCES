@@ -1,0 +1,182 @@
+body{
+  background: #e7e7e7;
+}
+table{
+  font-size: 15px;
+  width: 100% !important;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: 0;
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}  
+.contenedor-primario{
+  flex-direction: column;
+  height: 100vh;
+}
+.nombre_tabla{
+  background-color: #fff;
+  padding: 15px 0 10px 0px;
+
+  margin-bottom: 20px;
+  margin-top: 120px;
+  
+}
+.nombre_tabla h4{
+  font-size: 20px;
+  
+}
+
+.contenedor-segundario{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 250px;
+  padding-right: 20px;
+}
+.contenedor-tercero{
+  width: 100%;
+  background: white;
+  padding: 15px 0px 15px 15px;
+  margin-bottom: 24px;
+}
+a{ 
+text-decoration: none;
+cursor: pointer;
+}
+
+/*////////////////////////*/
+.dataTables_length label{
+  width: 68%;
+  display: flex;
+  margin-bottom: 5px;
+}
+.dataTables_filter label{
+  display: flex;
+}
+.form-select {
+  width: 80px;
+}
+thead{
+  color: #fff;
+  background-color: #5a5c69;
+  border-color: #6c6e7e;
+  font-size: 16px;
+  height: 40px;
+}
+
+.formulario #botonN a{
+    z-index: 2000;
+}
+label{
+ color: black;
+}
+/*//////// BOTONES DE ACCION ////////////*/
+button{
+  border: none;
+
+}
+.button-eliminar{
+  background: #84b6f4;
+  padding: 0 5px 0px 8px;
+}.button-eliminar:hover{
+  background: #63A5F7;
+}
+
+.button-actualizar{
+  background: #fa5f49;
+  padding: 0 5px 0px 8px;
+}.button-actualizar:hover{
+  background: #FB462C;
+}
+#input{
+  
+  border: none;
+}
+.form-control:focus{
+  box-shadow: none;
+  
+}
+
+.modal-input{
+  color: #a6a5a5;
+}
+.modal-title{
+  color: #666666;
+}
+.identificador_identificador{
+  display: none;
+}
+.sorting_1{
+  display: none;
+}
+/*contenedor de la informacion de los selectores en los modales*/
+.contenedor-info{
+  width: 100%;
+  background: red;
+  
+}
+.input-info{
+  border: none;
+  width: 20%;
+  text-align: start;
+  
+}
+#identificador-eliminar{
+  display: none;
+}
+
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+ 
+}
+.contenedor-upta div{
+  background-color: white;
+  text-align: center;
+  padding: 0 0 0 174px;
+}
+.contenedor-upta p{
+  margin-bottom: 0;
+  color: #9597a8;
+  font-size: 15px;
+}
+/*//////////////////////////////////*/
+
+@media only screen and (max-width: 1280px), handheld and (orientation: landscape){
+  .contenedor-segundario{
+    padding-right: 0;
+    padding-left: 220px;
+  }
+}
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+ .contenedor-segundario{
+  padding-left: 0;
+ }
+ .nombre_tabla{
+  width: 985px;
+ }
+ .contenedor-tercero{
+  width: 985px;
+}
+.dataTables_filter{
+  margin-bottom: 10px;
+}
+.contenedor-upta{
+  width: 985px;
+}
+.contenedor-upta div{
+  padding: 0;
+}
+}
+

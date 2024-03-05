@@ -1,0 +1,76 @@
+body{
+    background: url(../img/fondo2.svg) repeat-x; 
+}
+.container .img1{
+    width: 200px;
+}
+
+.fondo-contenedor{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.contenedor-central{
+    width: 100%;
+} 
+.fondo{
+    bottom: 70px;
+    position: relative;
+    width: 45%;
+    background: #ffff;
+    box-shadow: 0px 0px 10px #5555;
+    
+}
+.fondo .fondo-imagenes .img3{
+   width: 150px;
+   height: 50px;
+}
+.fondo .fondo-imagenes .img2{
+   width: 60px;
+   height: 60px;
+   margin-right: 12px;
+}
+.rojo{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+}
+/*////////////fondo animado//////////*/
+section .wave{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(../img/wave.png) repeat-x; 
+    animation: animate 3s linear infinite;
+}
+ @keyframes animate
+ {
+    0%
+    {
+       background-position: 0;
+    }
+    100%
+    {
+       background-position: 1360px;
+    }
+ }
+ @media only screen and (max-width: 600px){
+
+    .fondo{
+        width: 80%;
+       
+        
+    }
+ }
+ @media only screen and (max-width: 400px){
+
+    .fondo{
+        width: 90%;
+        margin-top: 80px;
+        
+    }
+    
+ }

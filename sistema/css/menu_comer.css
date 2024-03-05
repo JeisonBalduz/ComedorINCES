@@ -1,0 +1,147 @@
+body{
+    background: #e7e7e7 !important;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}  
+.contenedor-primario{
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.contendor-segundario{
+    margin-top: 65px;
+    width: 100%;
+    padding-left: 220px;
+    
+}
+.contendor-segundario .contendor-tercero{
+    padding: 15px 20px 0px 15px;
+    width: 100%;
+}
+
+.menu-menu{
+    width: 30% !important;
+}
+.div-text-menuComida {
+    background-color: white;
+    padding: 6px;
+    min-height: 100px;
+    max-height: 1200px;
+    font-weight: 100 !important;
+    font-size: 16px;
+    overflow: auto;
+    height: auto;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+.contenedor__figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-evenly;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.contenedor-comida{
+    width: 25%;
+    height: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+
+.img-menu{
+    width: 100%;
+    height: 80px;
+}
+
+.text-comida{
+    width: 100%;
+    display: none;
+    resize: none;
+}
+
+.text-comida-toggle{
+    display: block;
+    
+  
+}
+
+/*------------------*/
+.contenedor-botones{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-botones input{
+    margin-right: 5px;
+}
+
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    width: 100%;
+   
+  }
+  .contenedor-upta div{
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 174px;
+  }
+  .contenedor-upta p{
+    margin-bottom: 0;
+    color: #9597a8;
+    font-size: 15px;
+  }
+
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+   .contendor-segundario{
+    padding-left: 0;
+    padding-right: 80px;
+   }
+   
+
+    .contenedor-upta{
+        padding-left: 0;
+    }
+
+    .contenedor-upta div{
+        padding: 0;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px), handheld and (orientation: landscape){
+    .contenedor-primario{
+     align-items: normal;
+    }
+    
+    .contendor-segundario{
+        padding: 0;
+    }
+    .contenedor__figure{
+     display: flex;
+     flex-direction: column;   
+     align-items: center;
+    }
+
+    .contenedor-comida{
+        width: 70%;    
+    }
+    .menu-menu{
+        width: 50% !important;
+    }
+ 
+     
+ }
+

@@ -1,0 +1,130 @@
+body{
+    background-color: #e7e7e7;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}  
+.contenedor-primario {
+    width: 100%;
+    height: 100vh;   
+    flex-direction: column;   
+}
+.contenedor-segundario{
+
+    padding-left: 250px;
+    padding-right: 20px;
+  
+}
+
+.nombre_tabla h4{
+    font-size: 20px;
+    
+}
+.tabla{
+    padding: 10px 0 5px 0;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.tabla h4{
+    font-size: 20px;
+}
+.formulario{
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 50px #5555;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 24px;
+    
+}
+label{
+    color: black;
+}
+.contenedor-primario .contenedor-segundario #formulario label{
+    color: black;
+}
+/*// cambio de color del input con js//*/
+.input-aceptar:focus{
+    border: 2px solid rgb(35, 177, 54);
+  outline: none;
+}
+.input-aceptar{
+    border: 2px solid rgb(35, 177, 54);
+}
+.input-error{
+    border: 2px solid rgb(255, 8, 0);
+    
+}.input-error:focus{
+    border: 2px solid rgb(255, 8, 0);
+    outline: none;
+}
+
+
+/*   focus de bootstrap*/
+.input-group > .form-control:focus, .input-group > .form-floating:focus-within, .input-group > .form-select:focus {
+    box-shadow: none;
+    
+  }
+.contenedor-boton{
+    display: inline-block;
+    width: 200%;
+}
+
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+   
+  }
+  .contenedor-upta div{
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 174px;
+  }
+  .contenedor-upta p{
+    margin-bottom: 0;
+    color: #9597a8;
+    font-size: 15px;
+  }
+/* RESOLUCION DEL LARGO DE LAS PANTALLAS  */
+/* RESOLUCION DE ANCHO DE PANTALLAS  */
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+    .contenedor-segundario{
+        padding-left: 20px;
+    }
+    .contenedor-upta div{
+        padding: 0;
+      }
+}
+@media only screen and (max-width: 628px), handheld and (orientation: landscape){
+    .tabla{
+        
+        flex-wrap: wrap;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .contenedor-upta{
+        font-size: 15px;
+      
+      }
+      .contenedor-boton{
+        width: 100%;
+      }
+  }
+@media only screen and (max-width: 558px), handheld and (orientation: landscape){
+
+    .tabla h4{
+        font-size: 15px;
+    }
+   
+   
+}
+

@@ -1,0 +1,136 @@
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+
+/* Header de la barra superior*/
+#nav{
+	right: 0;
+	width: 100%;
+	height: 75px;
+	background: #e71717;
+	position: fixed;
+	z-index: 100;
+}
+
+.img_menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+		
+}
+.img_menu button{
+	padding: 0px 2px 0px 0px;
+	border: none;
+	display: none;
+	
+}
+
+		/* barra para cerrar sesion*/
+#nav .navbar-nav #lista  {
+	margin-right: 60px;
+}
+#nav .navbar-nav #lista #lista2  {
+	position: absolute;
+	left: -100px;
+	margin-right: 60px;
+}
+#nav .navbar-nav #lista #lista2 li {
+	display: flex;
+
+}
+#nav .navbar-nav #lista #lista2 li img {
+	position: relative;	
+	width: 22px;
+	height: 22px;
+	margin-right: 5px;
+	margin-top: 3px;
+	
+}
+#nav .navbar-nav #lista #lista2 li a {
+	text-decoration: none;
+	color: black;	
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+}
+#nav .navbar-nav #lista #lista2 li a:hover{
+	background: rgb(214, 214, 214);
+	border-radius: 10px;
+}
+      /*////////*/
+#nav .input-group{
+	margin-left: 50px;
+}
+#nav .input-group h5{
+	margin-right: 10px;
+}
+#conten-img img{
+	width: 160px;
+	height: 50px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+#nav .input-group{
+	margin-top: 5px;
+}
+
+#nav .input-group h6{
+	margin-right: 15px;
+}
+#nav .input-group p{
+	top: -2px;
+	position: relative;
+}
+
+.shadow {
+	box-shadow: none !important;
+}
+/*///////////////////////////////////////////////////////////*/
+
+#menu_principal a, label{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+	
+	.img_menu button{
+		padding: 0px 2px 0px 0px;
+		border: none;
+		display: block;
+		background-color: #e71717;
+		
+	}
+}
+
+/*Reloj de la parte inferir del menu*/
+#contenedor_menu .contenedor-reloj{
+	position: absolute;
+	bottom: 15px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0px 0px 20px;
+	
+}
+
+
+
+/*////////////////////////////////////////*/

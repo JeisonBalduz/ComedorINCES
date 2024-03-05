@@ -1,0 +1,200 @@
+body{
+    background-color: #e7e7e7;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0rem !important;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.contenedor-primario {
+  height: 100vh;
+  width: 100%;  
+  flex-direction: column;
+
+}
+.contenedor-segundario{
+  flex-direction: column;
+  width: 100%;
+  padding-left: 230px;
+  padding-right: 10px;
+}
+.tabla{
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.formulario{
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+table{
+  font-size: 15px;
+  width: 100% !important;
+}
+.sorting{
+  font-size: 15px !important;
+}
+thead{
+  color: #fff;
+  background-color: #5a5c69;
+  border-color: #6c6e7e;
+  font-size: 18px;
+  height: 40px;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,.05);
+}
+
+label{
+  color: black;
+  border: green;
+ 
+}
+.boton-alerts-verde{
+  border-radius: .25em;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  background-color:#28a745;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: center;
+  padding: .6rem .8rem;
+  border: none;
+  text-decoration: none;
+}.boton-alerts-verde:hover{
+  color: #fff;
+}
+/*//////// BOTONES DE ACCION ////////////*/
+button{
+  border: none;
+}
+.form-control:focus{
+  box-shadow: none; 
+}
+.button-eliminar{
+  background: #84b6f4;
+}.button-eliminar:hover{
+  background: #63A5F7;
+}
+
+.button-actualizar{
+  background: #fa5f49;
+}.button-actualizar:hover{
+  background: #FB462C;
+}
+
+.modal-input{
+  color: #a6a5a5;
+}
+.modal-title{
+  color: #666666;
+}
+.tabla{
+    padding: 10px 0 5px 0;
+}
+.tabla h4{
+    font-size: 20px;
+}
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+ 
+}
+.contenedor-upta div{
+  background-color: white;
+  text-align: center;
+  padding: 0 0 0 170px;
+}
+.contenedor-upta p{
+  margin-bottom: 0;
+  color: #9597a8;
+  font-size: 15px;
+}
+/*//////////////////////////////////*/
+
+/*/////////////// DATOS DE DISEÑO DEDATATABLE ///////////////////////*/
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: none;
+    background-color: #585858;
+    background: none;
+    background: none;
+    background:   none;
+    background: none ;
+    background:  none;
+    background:  none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: .2em 0em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: inherit !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+
+.dataTables_wrapper .dataTables_filter input{
+    margin-bottom: 10px;
+}
+#identificador-actualizar{
+  display: none;
+}
+#identificador-eliminar{
+  display: none;
+}
+
+@media only screen and (max-width: 1120px), handheld and (orientation: landscape){
+  .formulario{
+    width: 874px ;
+  }
+ 
+ }
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+ .contenedor-segundario{
+  padding-left: 10px;
+ }
+ .formulario{
+  width: 886px;
+  }
+  .contenedor-upta div{
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 0px;
+  }
+  .tabla {
+    padding: 10px 0 5px 0;
+    width: 886px;
+  }
+  .contenedor-upta{
+    width: 913px;
+  }
+}
+@media only screen and (max-width: 768px), handheld and (orientation: landscape){
+
+  .contenedor-upta div{
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 0px;
+  }
+  
+}
+

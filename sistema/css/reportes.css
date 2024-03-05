@@ -1,0 +1,197 @@
+body{
+    background-color: #e7e7e7;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}  
+.contenedor-primario {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+}
+.contenedor-segundario{
+  padding: 0;
+  width: 100%;
+  padding: 0 120px 0 380px;
+  flex-direction: column;
+}
+.tabla{
+  margin-top: 85px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+    
+}
+.tabla h4{
+    font-size: 20px;
+}
+.formulario{
+  box-shadow: 0px 0px 50px #5555;
+  padding: 15px 0px 15px 0 ;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/*///// contenedor boton para generar reportes ////////////////////*/
+.contenedor_boton{
+  display: flex;
+}
+.contenedor-boton{
+  width: 80%;
+  border: none;
+  background: #f02020;
+  color: #fff;
+  border-radius: 3px;
+  font-size: .9rem;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem .8rem;
+  overflow: hidden;
+  margin-bottom: 22px;
+  max-width: 1200px;
+  
+}
+.contenedor-boton img {
+  z-index: 1; 
+  width: 20px ;
+  height: 20px;
+}
+
+.contenedor-boton:hover{
+  transition: ease .3s ;
+  box-shadow: 10px 10px 0px #5555;
+}
+
+/*//////////////////////////////*/
+.boton-pdf{
+  background-color: #e54852;
+  color: #fff;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: .9rem;
+  justify-content: center;
+  padding: .3rem .8rem;
+  border: none;
+  
+}
+.boton-pdf:hover{
+  background-color: #f23945;
+}
+.boton-dependencia{
+  background-color:#84b6f4;
+  color: #fff;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: .9rem;
+  justify-content: center;
+  padding: .3rem .8rem;
+  border: none;
+}
+.boton-dependencia:hover{
+  background-color: #719bce;
+}
+.boton-pdf_solicitud{
+  background-color: #e54852;
+  color: #fff;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: .9rem;
+  justify-content: center;
+  padding: .3rem .8rem;
+  border: none;
+  width: 100%;
+}
+
+.boton-pdf_solicitud:hover{
+  background-color: #f23945;
+}
+#contenedor-general{
+  display: none;
+  transition: ease all;
+}
+.reporte1{
+  display: none;
+  box-shadow: 0px 0px 10px #5555;
+}
+.reporte12{
+  display: none;
+  box-shadow: 0px 0px 10px #5555;
+}
+
+
+#reportes{
+ width: 80%;
+}
+.reporte1 .reporte1_conten_dependencia{
+  width: 100%;
+}
+.contenedor_formulario{
+  width: 50%;  
+}
+
+.label_reporte{
+  color: black;
+}
+.dia_de_semana{
+  display: none;
+}
+.sede_aparece{
+  
+  transition: 50s ;
+  display: block;
+}
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+ 
+}
+.contenedor-upta div{
+  background-color: white;
+  text-align: center;
+  padding: 0 0 0 174px;
+}
+.contenedor-upta p{
+  margin-bottom: 0;
+  color: #9597a8;
+  font-size: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .contenedor-segundario{
+    padding: 0 15px 0 15px;
+  }
+  
+  .contenedor-upta div{
+    padding: 0;
+  }
+}
+@media only screen and (max-height: 768px){
+  .tabla{
+    flex-wrap: wrap;
+  }
+}
+
+/*///// resolucion para  600px*/
+@media only screen and (max-width: 605px) {
+  
+}
+/*///// resolucion para  400px*/
+@media only screen and (max-width: 400px) {
+  
+}
+
+    

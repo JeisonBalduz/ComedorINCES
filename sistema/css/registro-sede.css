@@ -1,0 +1,251 @@
+body{
+    background-color: #e7e7e7;
+  }
+  container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contenedor-primario {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+ 
+  }
+  .contenedor-segundario{
+    width: 100%;
+    padding-left: 239px;
+    padding-right: 22px;
+  }
+  
+  .formulario{
+    box-shadow: 0px 0px 50px #5555;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .tabla{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.tabla h4{
+    font-size: 20px;
+}
+
+.tabla-content{
+  padding: 10px 15px 20px 10px;
+  width: 100%;
+  background: white;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 24px;
+}
+table{
+  width: 100% !important;
+  font-size: 15px;
+}
+ thead{
+    color: #fff;
+    background-color: #5a5c69;
+    border-color: #6c6e7e;
+    font-size: 18px;
+    height: 40px;
+ }
+ 
+ .table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+a{
+ text-decoration: none; 
+}
+
+button{
+  border: none;
+
+}
+.button-eliminar{
+  background: #84b6f4;
+  padding: 0 5px 0px 8px;
+}.button-eliminar:hover{
+  background: #63A5F7;
+}
+
+.button-actualizar{
+  background: #fa5f49;
+  padding: 0 5px 0px 8px;
+}.button-actualizar:hover{
+  background: #FB462C;
+}
+.boton-java{
+    text-decoration: none;
+}
+/** footer universidad y creadores y ayudante */
+.contenedor-upta{
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+ 
+}
+.contenedor-upta div{
+  background-color: white;
+  text-align: center;
+  padding: 0 0 0 174px;
+}
+.contenedor-upta p{
+  margin-bottom: 0;
+  color: #9597a8;
+  font-size: 15px;
+}
+
+/*/////////////// DATOS DE DISEÑO DEDATATABLE ///////////////////////*/
+
+
+.dataTables_wrapper .dataTables_filter input{
+    margin-bottom: 10px;
+    
+}
+.dataTables_info{
+  color: #858796;
+}
+/* #858796 */
+label{
+  color: black ;
+}
+table{
+  color: black ;
+}
+
+#input{
+  color: #6c6e7e;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  
+}
+
+.modal-input{
+  color: #a6a5a5;
+
+}
+
+#identificador-actualiza{
+  display: none;
+}
+#identificador-eliminar{
+  display: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: none;
+    background-color: #585858;
+    background: none;
+    background: none;
+    background:   none;
+    background: none ;
+    background:  none;
+    background:  none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: .2em 0em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: inherit !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+  
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+    .contenedor-segundario{
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+    .contenedor-upta div{
+      padding: 0;
+    }
+   
+}
+@media only screen and (max-width: 800px), handheld and (orientation: landscape){
+
+    table.dataTable thead > tr > th.sorting::before, table.dataTable thead > tr > th.sorting_asc::before, table.dataTable thead > tr > th.sorting_desc::before, table.dataTable thead > tr > th.sorting_asc_disabled::before, table.dataTable thead > tr > th.sorting_desc_disabled::before, table.dataTable thead > tr > td.sorting::before, table.dataTable thead > tr > td.sorting_asc::before, table.dataTable thead > tr > td.sorting_desc::before, table.dataTable thead > tr > td.sorting_asc_disabled::before, table.dataTable thead > tr > td.sorting_desc_disabled::before {
+        bottom: 50%;
+        content: "";
+        }
+        table.dataTable thead > tr > th.sorting::after, table.dataTable thead > tr > th.sorting_asc::after, table.dataTable thead > tr > th.sorting_desc::after, table.dataTable thead > tr > th.sorting_asc_disabled::after, table.dataTable thead > tr > th.sorting_desc_disabled::after, table.dataTable thead > tr > td.sorting::after, table.dataTable thead > tr > td.sorting_asc::after, table.dataTable thead > tr > td.sorting_desc::after, table.dataTable thead > tr > td.sorting_asc_disabled::after, table.dataTable thead > tr > td.sorting_desc_disabled::after {
+        top: 50%;
+        content: "";
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        padding: 0em 0em;
+    }
+}
+@media only screen and (max-width: 668px), handheld and (orientation: landscape){
+  .tabla{
+    padding: 15px 0 10px 0 ;
+  }
+  .tabla h4{
+    font-size: 15px;
+  }
+   
+  tr{
+    font-size: 13px;
+  }
+
+ 
+
+     table.dataTable thead > tr > th.sorting::before, table.dataTable thead > tr > th.sorting_asc::before, table.dataTable thead > tr > th.sorting_desc::before, table.dataTable thead > tr > th.sorting_asc_disabled::before, table.dataTable thead > tr > th.sorting_desc_disabled::before, table.dataTable thead > tr > td.sorting::before, table.dataTable thead > tr > td.sorting_asc::before, table.dataTable thead > tr > td.sorting_desc::before, table.dataTable thead > tr > td.sorting_asc_disabled::before, table.dataTable thead > tr > td.sorting_desc_disabled::before {
+    bottom: 50%;
+    content: "";
+    }
+    table.dataTable thead > tr > th.sorting::after, table.dataTable thead > tr > th.sorting_asc::after, table.dataTable thead > tr > th.sorting_desc::after, table.dataTable thead > tr > th.sorting_asc_disabled::after, table.dataTable thead > tr > th.sorting_desc_disabled::after, table.dataTable thead > tr > td.sorting::after, table.dataTable thead > tr > td.sorting_asc::after, table.dataTable thead > tr > td.sorting_desc::after, table.dataTable thead > tr > td.sorting_asc_disabled::after, table.dataTable thead > tr > td.sorting_desc_disabled::after {
+    top: 50%;
+    content: "";
+    }
+    
+}
+
+@media only screen and (max-width: 550px), handheld and (orientation: landscape){
+  
+
+  
+    tr{
+      font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 470px), handheld and (orientation: landscape){
+  .contenedor-segundario{
+    padding-right: 0px;
+    padding-left: 11px;
+  }
+  .tabla{
+    width: 500px;
+  }
+  .formulario{
+    width: 500px;
+  }  
+
+ .tabla-content{
+  width: 500px;
+ }
+  
+  tr{
+    font-size: 11px;
+  }
+
+}
+

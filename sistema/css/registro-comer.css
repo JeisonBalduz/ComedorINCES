@@ -1,0 +1,98 @@
+body{
+    background-color: #e7e7e7;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+} 
+.contenedor-primario {
+    width: 100%;
+    height: 100vh; 
+    flex-direction: column;
+}
+.contenedor-segundario{
+    margin-top: 0px;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 30px 0 250px;
+}
+.tabla{
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+.tabla h4{
+    font-size: 20px;
+}
+.contenedor-primario .contenedor-segundario .formulario label{
+  color: black;
+}
+.formulario{
+  box-shadow: 0px 0px 50px #5555;
+  background: white;
+  margin-bottom: 24px;
+  padding: 15px;
+  width: 100%;
+    
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+        
+}
+#contenedor_identificador{
+  display: none;
+}
+.formulario .input-grupo, #nombre, #apellido, #sede, #estatus{
+  background: #edede9;
+}
+.contenedor-botones{
+  width: 200%;
+}
+
+ /** footer universidad y creadores y ayudante */
+.contenedor-upta{
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+ 
+}
+.contenedor-upta div{
+  background-color: white;
+  text-align: center;
+  padding: 0 0 0 174px;
+}
+.contenedor-upta p{
+  margin-bottom: 0;
+  color: #9597a8;
+  font-size: 15px;
+}
+@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
+  .contenedor-segundario{
+    padding: 0 15px 0 15px;
+  }      
+  .contenedor-upta div{
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px), handheld and (orientation: landscape){
+ 
+}
+@media only screen and (max-width: 558px), handheld and (orientation: landscape){
+
+  .tabla h4{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .contenedor-botones{
+    width: 100%;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+}
+    
+  
