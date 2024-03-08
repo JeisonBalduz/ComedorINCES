@@ -31,18 +31,11 @@ $cantidad_tickets = current($conexion -> query("SELECT COUNT(idticket) AS ticket
     <link rel="icon" href="include/inces.png">
 </head>
 <body>
-<?php include("include/header.php");?> 
-<?php
-if($idrol == 1){
-  ?>
-    <div class="contenedor-basedb">
-        <button class="boton-actualizar basedb me-2" id="botonbd">
-        Descargar Base de datos 
-        </button>
-    </div> 
-  <?php
-}
+<?php 
+include("include/header.php");
+require_once "./manualUsuario.php";
 ?> 
+
 <div class="contenedor_primario d-flex justify_content_center ">
    <div class="tabla d-flex justify-content-center align-items-center ">
       <h1 class=" text-center me-3 mt-5">
