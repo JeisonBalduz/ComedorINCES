@@ -27,9 +27,9 @@ include("php/rol.php");
 <body>
 <?php include("include/header.php");?>
 <div id="contenedor-primario"class="contenedor-primario container-fluid d-flex  ">
-  <div id="contenedor-segundario "class=" contenedor-segundario d-flex justify-content-center ">
+  <div id="contenedor-segundario "class=" contenedor-segundario justify-content-center ">
       <div id="contenedor-tercero" class="formulario">
-        <table class="table table-striped table-bordered" id="myTable">
+        <table class="table table-striped table-bordered display responsive nowrap" id="myTable">
 					<thead class="thead-dark">
 						<tr>	
 							

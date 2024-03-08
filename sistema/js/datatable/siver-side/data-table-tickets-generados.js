@@ -5,6 +5,8 @@ $(document).ready(function() {
         "serverSide": true,
         "lengthMenu": [6, 10, 25],
         "pageLength": 6,
+        "responsive": true,
+		"autoWidth": false,
         "ajax": "php/php_datatable/data-tickets-generados.php",
         "type": "POST",
         "language": {
