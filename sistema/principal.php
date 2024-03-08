@@ -6,6 +6,8 @@ include("php/rol.php");
 $cantidad_personal = current($conexion -> query("SELECT COUNT(idpersonal) AS personal FROM personal")->fetch_assoc()) ;
 $cantidad_usuarios = current($conexion -> query("SELECT COUNT(idusuario) AS usuario FROM usuario")->fetch_assoc()) ;
 $cantidad_tickets = current($conexion -> query("SELECT COUNT(idticket) AS tickets FROM ticket")->fetch_assoc()) ;
+$cantidad_ausencia = current($conexion -> query("SELECT COUNT(idpermiso) AS ausencia FROM ausencia_justificada")->fetch_assoc()) ;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,46 +50,9 @@ include("include/header.php");
         <?php  echo $usuario?>
     </h2>
   </div>
-  
   <?php
-      if($idrol == 1){
-        ?>   
-              
-          <div class="contenedor_segundario d-flex justify-content-center ">
-            <a href="tabla-registro.php">
-            <figure class="d-flex align-items-center">
-              <img class="ms-3" src="icons/grupo.png" alt="">
-              <div class="d-flex align-items-end ps-2">
-                <span lass="me-2">Personal</span>
-                <h6 class="ms-2 me-2">   <?php  echo $cantidad_personal?></h6>
-              </div>
-            </figure>
-            </a>
-
-            <a href="tabla-usuario.php">
-            <figure class="d-flex align-items-center">
-              <img  class="ms-3" src="icons/usuario.png" alt="">
-              <div class="d-flex align-items-end ps-2"> 
-                <span class="me-2">Usuarios</span>
-                 <h6 class="ms-2 me-2"><?php  echo $cantidad_usuarios?></h6>
-              </div>
-            </figure>
-            </a>
-
-            <a href="tabla-tickets.php">
-            <figure class="d-flex align-items-center">
-              <img class="ms-3 " src="icons/grupo.png" alt="">
-              <div class="d-flex align-items-end ps-2">
-                <span lass="me-2">Tickets</span>
-                 <h6 class="ms-2 me-2"><?php  echo $cantidad_tickets?></h6>
-              </div>
-            </figure>
-            </a>
-          </div>
-        <?php
-      }
+  require_once "./botonesUsuario.php";
   ?>
-  
   <section class="section_datos d-flex justify-content-center">
     <div class="separador">
       <div class="container-fluid d-flex justify-content-center bg-danger p-2 text-white " >

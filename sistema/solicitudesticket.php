@@ -20,7 +20,8 @@ include("php/rol.php");
     <link rel="stylesheet" href="css/tabla-ausencia.css">
     <!--Icono De La Pagina -->
     <link rel="icon" href="include/inces.png">
-  
+   
+
     
     <!--Icono de la pagina -->
     <link rel="icon" href="include/inces.png">
@@ -32,7 +33,9 @@ include("php/rol.php");
         <div class="tabla container-fluid d-flex justify-content-center bg-danger ">
             <h4 class="text-white me-3">T A B L A</h4>
             <h4 class="text-white me-3">D E</h4>
-            <h4 class="text-white">A U S E N C I A S</h4>
+            <h4 class="text-white me-3">S O L I C I T U D E S</h4>
+            <h4 class="text-white me-3">D E</h4>
+            <h4 class="text-white ">T I C K E T</h4>
         </div>
     <div id="contenedor-tercero" class="formulario ">
       <!--
@@ -46,10 +49,10 @@ include("php/rol.php");
         <table class="table table-striped table-bordered" id="myTable">
 					<thead class="thead-dark">
 						<tr>
-              <th>#</th>	
-							<th class="">NOMBRE</th>
-							<th class="">APELLIDO</th>
-							<th class="">CEDULA</th>
+                      <th>#</th>	
+					  <th class="">NOMBRE</th>
+					  <th class="">APELLIDO</th>
+					  <th class="">CEDULA</th>
 				      <th class="">FECHA_INI</th>
 				      <th class="">FECHA_FIN</th>
 				      <th class="">PERMISO</th>
@@ -59,11 +62,7 @@ include("php/rol.php");
 					</thead>
 				</table>
         </div>
-            <section class="d-flex">
-              <div class="mt-2">
-                <a href="registro-ausencia.php"><button class="boton-alerts-azul" ><img src="icons/administracion.png" alt="" class="me-3">Ausencia Justificada</button></a>
-              </div>
-            </section>
+            
     </div>
   </div>
   <footer class="contenedor-upta d-flex">

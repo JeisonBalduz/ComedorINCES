@@ -82,6 +82,10 @@
                                 <li class="list__inside">
                                     <a href="./registro-ticket.php" class="nav__link nav__link--inside">Pedir Tickets</a>
                                 </li>
+                                
+                                <li class="list__inside">
+                                    <a href="./solicitud_ticket.php" class="nav__link nav__link--inside">Solicitudes ticket</a>
+                                </li>
 
                                 <li class="list__inside">
                                     <a href="./reportes.php" class="nav__link nav__link--inside">Reporte</a>
@@ -90,6 +94,8 @@
                                 <li class="list__inside">
                                     <a href="./menu_comer.php" class="nav__link nav__link--inside">Menu</a>
                                 </li>
+
+                               
                             </ul>
 
                         </li>
@@ -114,9 +120,7 @@
                                     <a href="./tabla-eliminados-registros.php" class="nav__link nav__link--inside">Personal Eliminado</a>
                                 </li>
 
-                                <li class="list__inside">
-                                    <a href="./solicitud_ticket.php" class="nav__link nav__link--inside">Solicitudes ticket</a>
-                                </li>
+                                
                             </ul>
 
                         </li> 
