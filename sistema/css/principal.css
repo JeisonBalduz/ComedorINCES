@@ -1,42 +1,47 @@
 /*centrar todo en el cuadrado centrar entre los menus*/
 
-body{
-    background: #e7e7e7 !important;
-
-  }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    --bs-gutter-x: 0rem;
-    --bs-gutter-y: 0;
-}  
-.contenedor-basedb{
+body {
+  background: #e7e7e7 !important;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+}
+.contenedor-basedb {
   width: 100%;
   display: flex;
   justify-content: right;
 }
-.basedb{
+.basedb {
   position: relative;
   top: 5rem;
 }
-.contenedor_primario{
+.contenedor_primario {
   flex-direction: column;
   height: 100vh;
-  width: 100%;      
+  width: 100%;
 }
-.tabla{
+.tabla {
   margin-top: 40px;
   margin-bottom: 24px;
   padding-left: 120px;
 }
-.segundario{
+.segundario {
   height: 10px;
 }
-.contenedor_segundario{
+.contenedor_segundario {
   padding: 0 0 0 250px;
 }
-.contenedor_segundario a{
+.contenedor_segundario a {
   text-decoration: none;
 }
-.contenedor_segundario figure{
+.contenedor_segundario figure {
   background-color: #d33;
   margin-right: 50px;
   width: 200px;
@@ -44,96 +49,105 @@ body{
   border-radius: 18px;
   box-shadow: 10px 10px 0px #5555;
 }
-.contenedor_formulario_principal{
+.contenedor_formulario_principal {
   background-color: white;
 }
-.section_datos{
+.section_datos {
   padding: 0 0 0 200px;
 }
-figure{
-  color: white;       
+figure {
+  color: white;
 }
-section div label{
+section div label {
   color: black;
 }
-.separador{
+.separador {
   width: 400px;
-        
 }
-.separador:nth-child(1){
+.separador:nth-child(1) {
   margin-right: 25px;
 }
-.contenedor_formulario_principal{ 
+.contenedor_formulario_principal {
   box-shadow: 0 0 15px #5555;
   padding: 20px 40px 18px 40px;
 }
-    
-      /* clase de bootstrap editada  */
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+/* clase de bootstrap editada  */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
   line-height: inherit;
-}     
+}
 /** footer universidad y creadores y ayudante */
-.contenedor-upta{
+.contenedor-upta {
   flex-direction: column;
   display: flex;
   justify-content: end;
   height: 100vh;
- 
 }
-.contenedor-upta div{
+.contenedor-upta div {
   background-color: white;
   text-align: center;
   padding: 0 0 0 174px;
 }
-.contenedor-upta p{
+.contenedor-upta p {
   margin-bottom: 0;
   color: #9597a8;
   font-size: 15px;
 }
-@media only screen and (max-width: 1024px), handheld and (orientation: landscape){
-  .tabla{
+@media only screen and (max-width: 1024px),
+  handheld and (orientation: landscape) {
+  .tabla {
     padding: 0 0 0 0;
   }
-  .contenedor_segundario{
+  .contenedor_segundario {
     padding: 0 0 0 50px;
   }
-  .section_datos{
+  .section_datos {
     padding: 0 0 0 0;
     transition: all 0.5s ease-in;
   }
-  .contenedor-upta div{
-    padding:  0 0 0 0 ;
+  .contenedor-upta div {
+    padding: 0 0 0 0;
   }
-    
 }
-@media only screen and (max-width: 668px), handheld and (orientation: landscape){
-   .contenedor_segundario{
+@media only screen and (max-width: 668px),
+  handheld and (orientation: landscape) {
+  .contenedor_segundario {
     flex-direction: column;
     padding: 0 0 0 0;
-    
-   }
-   .contenedor_segundario figure{
+  }
+  .contenedor_segundario figure {
     width: 100%;
-   }
+  }
 }
-@media only screen and (max-width: 550px), handheld and (orientation: landscape){
-  .section_datos{
+@media only screen and (max-width: 550px),
+  handheld and (orientation: landscape) {
+  .section_datos {
     flex-direction: column;
     align-items: center;
   }
-  .separador:nth-child(1){
-    margin-right: 0;
-    margin-bottom: 24px;
-  }  
-  .separador:nth-child(2){
+  .separador:nth-child(1) {
     margin-right: 0;
     margin-bottom: 24px;
   }
-  .separador{
+  .separador:nth-child(2) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .separador {
     width: 100%;
   }
-
 }

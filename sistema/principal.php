@@ -33,10 +33,13 @@ $cantidad_tickets = current($conexion -> query("SELECT COUNT(idticket) AS ticket
 <body>
 <?php 
 include("include/header.php");
-require_once "./manualUsuario.php";
+
 ?> 
 
 <div class="contenedor_primario d-flex justify_content_center ">
+  <?php
+  require_once "./manualUsuario.php";
+  ?>
    <div class="tabla d-flex justify-content-center align-items-center ">
       <h1 class=" text-center me-3 mt-5">
       ! Bienvenido 
