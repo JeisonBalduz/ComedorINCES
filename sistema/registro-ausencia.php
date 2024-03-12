@@ -58,19 +58,19 @@ date("d");
                 <input list="browsers" type="text" name="cedula" class="form-control" id="cedula" placeholder="Cédula"onkeypress="buscar_datos_teclado()" onkeypress="return SoloNumeros(event);"><br>
                   <datalist id="browsers">
                     <?php
-                    $getclientes1 = "SELECT * FROM personal WHERE activo= '1' order by idpersonal ";
-                    $resultado = mysqli_query($conexion, $getclientes1);
-                        while($row = mysqli_fetch_array($resultado))
-                    { 
-                        $nombre_personal= $row['nombre'];
-                        $nombre_apellido= $row['apellido'];
-                        $cedula_personal = $row['cedula'];
-                    ?>
-                        <option  onclick="buscar_datos();" id="cedula" name="cedula" value="<?php echo $cedula_personal?> "> <?php echo $cedula_personal = $row['cedula']; echo " "; echo $nombre_personal; echo " ";echo $nombre_apellido;?></option>
+                      $getclientes1 = "SELECT * FROM personal WHERE activo= '1' order by idpersonal ";
+                      $resultado = mysqli_query($conexion, $getclientes1);
+                          while($row = mysqli_fetch_array($resultado))
+                      { 
+                          $nombre_personal= $row['nombre'];
+                          $nombre_apellido= $row['apellido'];
+                          $cedula_personal = $row['cedula'];
+                      ?>
+                          <option  onclick="buscar_datos();" id="cedula" name="cedula" value="<?php echo $cedula_personal?> "> <?php echo $cedula_personal = $row['cedula']; echo " "; echo $nombre_personal; echo " ";echo $nombre_apellido;?></option>
 
 
-                    <?php
-                    }
+                      <?php
+                      }
                     ?>
                   </datalist>
               </div>
@@ -187,8 +187,19 @@ date("d");
 <?php include("modal/modal-permiso.php");?>
 <?php include("modal/modificar-permiso.php");?>
 
+							<!-- JQuery -->
+<script src="js/libreriasJS/jquery-3.6.3.min.js"></script>
+<!-- Llamado de DataTable -->
+<script src="js/datatable/datatables.min.js"></script>
+<!-- DataTable js DataTAble bootstrap -->
+<script src="js/datatable/dataTables.bootstrap5.min.js"></script>
+							
+
+<script src="js/datatable/siver-side/data-soli-permisos.js"></script>
 <script src="js/menu_2.0.js"></script>
 <script src="js/todo.js"></script>
+<script src="js/fechaActuales.jsjs"></script>
+<script src="js/registro-ausencia.js"></script>
 <!-- Cerrar sesion -->
 <script src="js/cerrar-sesion.js"></script>
 </body>

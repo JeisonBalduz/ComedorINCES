@@ -53,6 +53,7 @@ include("include/header.php");
   <?php
   require_once "./botonesUsuario.php";
   ?>
+ 
   <section class="section_datos d-flex justify-content-center">
     <div class="separador">
       <div class="container-fluid d-flex justify-content-center bg-danger p-2 text-white " >
@@ -116,10 +117,7 @@ include("include/header.php");
 <script src="./js/principal.js"></script>
 <script src="js/todo.js"></script>
 <script src="js/menu_2.0.js"></script>
-<script type="text/javascript">
-
-
-</script>
+<script src="./js/fechaActualAS.js"></script>
 </body>
 </html>
 <?php

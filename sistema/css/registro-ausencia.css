@@ -17,7 +17,17 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
+.modal-content{
+  width: 40% !important;
+  
+}
+.table{
+  width: 100% !important;
+}
+.modal.show .modal-dialog{
+  display: flex;
+  justify-content: center;
+}
 .contenedor-primario {
   height: 100vh;
   flex-direction: column;

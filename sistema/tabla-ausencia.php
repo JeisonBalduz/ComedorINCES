@@ -78,6 +78,8 @@ include("php/rol.php");
 
 <!-- Cerrar sesion -->
 <script src="js/cerrar-sesion.js"></script>
+<!-- solicitudes se ausencia -->
+<script src="js/fechaActuales.js"></script>
 <!-- BootsTrap -->
 <script src="js/libreriasJS/bootstrap.bundle.min.js"></script>
 <!-- SweetAlert2 -->

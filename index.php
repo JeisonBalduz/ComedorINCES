@@ -53,7 +53,7 @@
         <div class="wave"></div>
     </section>
 
-
+    <script src="./sistema/js/fechaActuales.js"></script>
     <script type="text/javascript">
         /*
      function SoloNumeros(e){
