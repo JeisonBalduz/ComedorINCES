@@ -129,7 +129,7 @@ date("d");
               <div class=" input-group ">
                 <label class="mt-3" for="">Permiso</label>
                 <span class="input-group-text" id="basic-addon1"><img src="icons/permiso.png" alt=""></span>
-                <select class="form-control" name="permiso" id="">
+                <select class="form-control" name="permiso" id="permiso">
                   <option value="">Seleccione Un Permiso </option>
                   <?php
                         $estados = "SELECT * FROM permisos";
@@ -210,6 +210,8 @@ date("d");
 <script src="js/todo.js"></script>
 <script src="js/fechaActuales.jsjs"></script>
 <script src="js/registro-ausencia.js"></script>
+<!-- solicitudes se ausencia -->
+<script src="js/fechaActuales.js"></script>
 <!-- Cerrar sesion -->
 <script src="js/cerrar-sesion.js"></script>
 

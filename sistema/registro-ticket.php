@@ -234,10 +234,11 @@ function fecha_espanol_larga(){
               $identificador= $_POST['identificador'];
               $cedula222= $_POST['cedula'];
               $fecha = date("d/m/y");
+              $fechatickets = date("Y-m-d");
               $hora = date("h:i:s:A");
               $comida= $_POST['comida'];
               $pd_ticket = 0;          
-              $consulta ="INSERT INTO ticket( idpersonal, fecha, hora, comida, estatus_ticket) VALUES ('$identificador','$fecha','$hora', '$comida', '$pd_ticket')";
+              $consulta ="INSERT INTO ticket( idpersonal, fecha, hora, comida, estatus_ticket) VALUES ('$identificador','$fechatickets','$hora', '$comida', '$pd_ticket')";
               
               $verificar_habilitado= mysqli_query($conexion, "SELECT * FROM personal_eliminado WHERE  idpersonal='$identificador'");
                   if(mysqli_num_rows($verificar_habilitado) > 0){

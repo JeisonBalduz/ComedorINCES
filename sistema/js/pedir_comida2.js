@@ -92,7 +92,17 @@ comprobarAcceso();
 
 
 
-
+var limpiar_datos = document.getElementById("limpiar");
+  limpiar_datos.addEventListener("click", function(){
+    $("#identificador").val("");
+    $("#cedula").val("");
+    $("#nombre").val("");
+    $("#apellido").val("");
+    $("#sede").val("");
+    $("#estatus").val("");
+    
+  
+  })
 
 
 
