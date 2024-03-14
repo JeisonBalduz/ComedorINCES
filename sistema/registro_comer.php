@@ -101,6 +101,8 @@ $hora2=("10:32:00");
             <!-- BOTON -->
             <div class="contenedor-botones mt-3 d-flex  justify-content-center ">
                 <input type="button" value="BUSCAR" class="boton-verde me-2" id="buscar" name="btn_enviar" onclick="buscar_datos();">
+                <input type="button" value="LIMPIAR" class="boton-actualizar me-2" id="limpiar" name="btn_enviar" onclick="limpiar();">
+
                 <input class="boton-dependencia" type="submit" name="boton-comer" value="COMER"><br>
             </div>
           </form>
@@ -126,7 +128,8 @@ $hora2=("10:32:00");
 <script src="js/todo.js"></script>
 <!-- JS De registro de personal-->
 <script src="js/registro-personal.js"></script>
-<script src="js/reloj.js"></script>
+<script src="js/pedir_comida2.js"></script>
+
 <!-- Cerrar sesion -->
 <script src="js/cerrar-sesion.js"></script>
 <script src="js/todo.js"></script>

@@ -63,6 +63,9 @@ include("php/rol.php");
               <div class="mt-2">
                 <a href="registro-ausencia.php"><button class="boton-alerts-azul" ><img src="icons/administracion.png" alt="" class="me-3">Ausencia Justificada</button></a>
               </div>
+              <div class="mt-2 ms-2 boton-crear">
+                    <a href="./calendario.php" class="boton-alerts-verde" ><img src="icons/calendario2.png" alt="" class="me-3">Ver calendario</a>
+                  </div>
             </section>
     </div>
   </div>

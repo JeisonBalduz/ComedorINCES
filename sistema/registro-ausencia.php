@@ -150,27 +150,37 @@ date("d");
               <div class="mt-3 d-flex justify-content-center align-items-center">
                 <input type="button" value="BUSCAR" class="boton-verde me-2" id="buscar" name="btn_enviar" onclick="buscar_datos();">
                 <input type="button" value="LIMPIAR" class="boton-amarillo me-2" id="limpiar" name="btn_enviar">
-                <input id="generar" type="submit" value="GENERAR" class="boton-actualizar"  name="boton-aceptar" >            
+                <input id="generar" type="submit" value="GENERAR" class="boton-actualizar me-2"  name="boton-aceptar" >  
+                <input type="color" name="color" class="ms-2">       
               </div> 
-                  <?php
-                    if ($idrol == 1) {
+                <?php
+                   
+                  ?>
+                   <section class="mt-4 contenedor-boton-admin d-flex">
+                    <?php
+                    if($idrol == 1){
                       ?>
-                        <section class="mt-4 contenedor-boton-admin d-flex">
-                          <div class="mt-2 boton-crear">
+                      <div class="mt-2 boton-crear">
                             <a href="tabla-ausencia.php" class="boton-actualizar" ><img src="icons/administracion.png" alt="" class="me-3">Tabla de ausencia justificada</a>
                           </div>
-                          <div class="mt-2 me-3">
+                          <div class="mt-2 me-2">
                             <button type="button"  data-bs-toggle="modal" data-bs-target="#boton-permiso" class="boton-verde" id=""><img src="icons/anadir-amigo.png" alt="" class="me-3">Crear permiso</button>
                       
                           </div>
-                          <div class="mt-2">
+                          <div class="mt-2 me-2">
                             <button type="button" class="boton-verde" data-bs-toggle="modal" data-bs-target="#modificar-permiso" id=""><img src="icons/anadir-amigo.png" alt="" class="me-3">Cambiar permisos</button>
-                          </div>
-                        </section>
+                        </div>
+                      <?php
+                    }
+                    ?>
+                  <div class="mt-2 boton-crear">
+                    <a href="./calendario.php" class="boton-actualizar" ><img src="icons/calendario2.png" alt="" class="me-3">Ver calendario</a>
+                  </div>
+                    
+                   </section>
                   <?php
-                }
-
-                ?>   
+                ?>  
+                 
           </form>
 
       </div>
@@ -202,6 +212,7 @@ date("d");
 <script src="js/registro-ausencia.js"></script>
 <!-- Cerrar sesion -->
 <script src="js/cerrar-sesion.js"></script>
+
 </body>
 </html>
 
@@ -229,14 +240,15 @@ date("d");
                         $identificador  = $_POST['identificador'];
                         $fecha_inicio =  $_POST['fecha-i'];
                         $fecha_fin =  $_POST['fecha-f'];
+                        $color =  $_POST['color'];
                         $fecha = date("Y-m-d");
                         $hora = date("h:i:s:A");
                         $identificador_usuario = $id;
                         $permiso = $_POST['permiso'];
                       
                         $consulta_AJ ="INSERT INTO ausencia_justificada(idpersonal, id_permiso, fecha_inicio, fecha_fin, 
-                        fecha_aj, hora_aj, iden_usuario_aj) VALUES ('$identificador', '$permiso', '$fecha_inicio', '$fecha_fin',
-                         '$fecha', '$hora', '$identificador_usuario')";
+                        fecha_aj, hora_aj, iden_usuario_aj, color) VALUES ('$identificador', '$permiso', '$fecha_inicio', '$fecha_fin',
+                         '$fecha', '$hora', '$identificador_usuario', '$color')";
 
                         
                         // verificar si este permiso ya existe en la base de datos /*

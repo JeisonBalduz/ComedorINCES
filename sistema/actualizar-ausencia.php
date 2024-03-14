@@ -20,6 +20,7 @@ while ($rowAusencia=$resultado_registro_personal->fetch_assoc()){
   $fecha_fin = $rowAusencia['fecha_fin'];
   $permiso = $rowAusencia['permisos'];
   $idpermiso = $rowAusencia['idpermisos_aj'];
+  $color = $rowAusencia['color'];
   
 }
 ?>
@@ -73,6 +74,10 @@ while ($rowAusencia=$resultado_registro_personal->fetch_assoc()){
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
+      }
+      .boton-color{
+        width: 30%;
+        height: 40px;
       }
       #identificador-actualizar{   
         display: none;
@@ -202,6 +207,10 @@ while ($rowAusencia=$resultado_registro_personal->fetch_assoc()){
                     </select>
                 
                 </div>
+                <div>
+                  <input type="color" name="color" id="" class="boton-color" value="<?php echo $color;?>">
+                </div>
+                <div></div>
                 
                 <div class="contenedor-botones container-fluid d-flex justify-content-center mt-3 mb-4 ">
                   <button type="button" class="boton-alerts-gris me-3" id="boton-cancelar">Cancelar</button>
@@ -267,7 +276,8 @@ while ($rowAusencia=$resultado_registro_personal->fetch_assoc()){
             $editarfechaini = $_POST['editar-fecha-ini'];
             $editarfechafin = $_POST['editar-fecha-fin'];
             $editarpermiso = $_POST['editar-permiso'];
-            $consulta2 ="UPDATE ausencia_justificada SET  fecha_inicio='$editarfechaini', fecha_fin='$editarfechafin', id_permiso='$editarpermiso' WHERE idpermiso='$id'";
+            $color = $_POST['color'];
+            $consulta2 ="UPDATE ausencia_justificada SET  fecha_inicio='$editarfechaini', fecha_fin='$editarfechafin', id_permiso='$editarpermiso', color='$color' WHERE idpermiso='$id'";
             $resultadoeditar = mysqli_query($conexion, $consulta2);
 
             if($resultadoeditar){
