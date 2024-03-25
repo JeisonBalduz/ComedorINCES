@@ -11,9 +11,12 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+$conn->query("SET @autoid := 0");
+$conn->query("UPDATE perticket SET idticket = (@autoid := @autoid + 1)");
+$conn->query("ALTER TABLE perticket AUTO_INCREMENT = 1");
 
 // Obtener el número total de registros en la base de datos
-$sql = "SELECT COUNT(idticket) as count FROM perticket ";
+$sql = "SELECT COUNT(idticket) AS count FROM perticket ";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $totalRecords = $row['count'];

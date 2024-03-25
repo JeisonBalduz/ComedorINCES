@@ -111,7 +111,7 @@ while($row =$resultado_comida->fetch_assoc()){
               if($idrol == 1 || $idrol == 4){
                 ?>
                   <div class="contenedor-botones">
-                    <input class="boton-alerts-verde" name="boton-aceptar" type="submit" id="actualizar_menu" value="Actualizar">
+                    <input class="boton-alerts-verde" name="boton-aceptar" type="submit" id="actualizar_menu" value="Actualizar" hidden>
                     <button class="boton-alerts-amarillo butonhabi" id="butonMenu" type="button" >Cambiar Menu</button>
                   </div>
                 <?php

@@ -258,7 +258,7 @@ perticket.idpersonal = personal.idpersonal INNER JOIN sedes ON personal.idsede =
 sedes.idsede INNER JOIN estatus ON personal.idestatus = estatus.idestatus
 INNER JOIN usuario ON perticket.iden_usuario = usuario.idusuario 
 
-WHERE perticket.fecha BETWEEN  '$desde' AND '$hasta' ORDER BY perticket.fecha");
+WHERE perticket.fecha BETWEEN  '$desde' AND '$hasta' ");
 
 
     $resultado = mysqli_query($conexion, $productos);

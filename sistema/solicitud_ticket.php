@@ -82,5 +82,6 @@ include("php/rol.php");
 <script src="js/tablasoli-ticket.js"></script>
 <!-- Mover menú para telefonos movíles-->
 <script src="js/menu_2.0.js"></script>
+<script src="js/pedir_comida2.js"></script>
 </body>
 </html>

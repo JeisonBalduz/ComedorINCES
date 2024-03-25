@@ -1,5 +1,6 @@
 var Botondesabilitar = document.getElementById("butonDesabilitar");
 var BotonHabilitar = document.getElementById("butonMenu");
+const botonActualizarMenu = document.getElementById("actualizar_menu");
 
 var inputs1 = document.getElementById("texto1");
 var inputs2 = document.getElementById("texto2");
@@ -24,6 +25,11 @@ BotonHabilitar.addEventListener('click', function(){
   console.log(inputs4);
   console.log(inputs5);
   console.log(inputs6);
+  
+
+// Eliminar el atributo "atributo-a-eliminar"
+botonActualizarMenu.removeAttribute('hidden');
+
 });
 
 var Botondesabilitar = document.getElementById("butonDesabilitar");
@@ -44,7 +50,7 @@ botonCambiarMenu.addEventListener('click', function (){
   ));
  
 })
-const botonActualizarMenu = document.getElementById("actualizar_menu");
+
 botonActualizarMenu.addEventListener('click', function (){
   console.log("funcionando");
   let $textArea = document.querySelectorAll('.text-comida');

@@ -257,6 +257,7 @@ if ( strlen($_GET['sede']) > 0 ) {
             $this->SetFont('Arial','B',10);
 
             $this->Cell(31, 8, 'Desayuno:'.$desayuno, 0);
+            $this->SetX(40);
             $this->Cell(31, 8, 'Almuerzo:'.$almuerzo, 0);
             $this->Cell(31, 8, 'Cena:'.$cena, 0);
 
@@ -533,7 +534,9 @@ $this->SetTextColor(0, 0, 0);
 $this->SetFont('Arial','B',10);
 $this->SetXY(4, 55);
 $this->Cell(25, 8, 'Desayuno:'.$desayuno2, 0);
+$this->SetX(40);
 $this->Cell(25, 8, 'Almuerzo:'.$almuerzo2, 0);
+$this->SetX(75);
 $this->Cell(20, 8, 'Cena:'.$cena2, 0);
 
 $this->Ln(16);

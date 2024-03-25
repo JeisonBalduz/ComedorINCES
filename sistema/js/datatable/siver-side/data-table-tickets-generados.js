@@ -4,7 +4,7 @@ $(document).ready(function() {
         "processing": true,
         "serverSide": true,
         "lengthMenu": [6, 10, 25],
-        "pageLength": 6,
+        "pageLength": 10,
         "responsive": true,
 		"autoWidth": false,
         "ajax": "php/php_datatable/data-tickets-generados.php",
